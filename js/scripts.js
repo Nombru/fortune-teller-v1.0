@@ -17,7 +17,7 @@ $(document).ready(function(){
     $(".click").hide();
   });
 
-  $("button").click(function(){
+  $("#start").click(function(){
     $("#quiz").hide();
     $("input:checkbox[name=lucky]:checked").each(function(){
       var luckyHappenings = parseFloat($(this).val());
@@ -60,6 +60,15 @@ $(document).ready(function(){
         alert("Pick some answers, you dangoose!");
         $("#quiz").show();
       };
+  });
+
+  $("#restart").click(function(){
+    event.preventDefault();
+    $("#answer").remove();
+  console.log("Hi!");
+    $("#results").remove();
+    empty(total);
+    $("#quiz").show();
   });
 });
 //ui logic ends
