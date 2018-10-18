@@ -62,16 +62,21 @@ $(document).ready(function(){
       };
   });
 
-  $("#restart").click(function(){
-    event.preventDefault();
-    $("#answer").remove();
-  console.log("Hi!");
-    $("#results").remove();
-    empty(total);
-    $("#quiz").show();
-  });
-});
 //ui logic ends
+
+
+// ––––––––This is trying to reset the forms–––––––––
+//   $("#restart").click(function(){
+//     event.preventDefault();
+//     $("#answer").remove();
+//   console.log("Hi!");
+//     $("#results").remove();
+//     var resultsArray = [];
+//     var total = 0;
+//     $("#quiz").show();
+//   });
+// });
+
 
 // ––––This code is attempting to display a message if the user didn't select anything –––––––––
 
