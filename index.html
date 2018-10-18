@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Fortune teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" id="title">
+        <h1>Fortune teller</h1>
+        <p>tells your fortune</p>
+        <span class="click">Click here to start!</span>
+      </div>
+<!-- Lucky Things -->
+      <div class="jumbotron" id="quiz">
+        <form id="luckyThings">
+          <div class="form-group">
+            <p>Check all the lucky things that have happened to you in the last week:</p>
+            <input type="checkbox" name="lucky" value="1">Saw a black cat.<br>
+            <input type="checkbox" name="lucky" value="1">Found a four-leaf clover.<br>
+            <input type="checkbox" name="lucky" value="1">Won the $5 lottery.<br>
+            <input type="checkbox" name="lucky" value="1">Found a penny face up.<br>
+            <input type="checkbox" name="lucky" value="1">Got a free shot of espresso.<br>
+            <input type="checkbox" name="lucky" value="1">Made a new friend.<br>
+          </div>
+        </form>
+<!-- Unlucky Form -->
+        <form id="unluckyThings">
+          <div class="form-group">
+            <p>Check all the unlucky things that have happened to you in the last week:</p>
+            <input type="checkbox" name="unlucky" value="-1">Saw a white cat.<br>
+            <input type="checkbox" name="unlucky" value="-1">Walked under a ladder.<br>
+            <input type="checkbox" name="unlucky" value="-1">Got a parking ticket.<br>
+            <input type="checkbox" name="unlucky" value="-1">Spilled coffee.<br>
+            <input type="checkbox" name="unlucky" value="-1">Felt bad.<br>
+            <input type="checkbox" name="unlucky" value="-1">Said cheers with an empty glass.<br>
+          </div>
+        </form>
+        <button type="button" name="button">Show me my future!</button>
+<!-- Results -->
+      </div>
+      <div class="jumbotron" id="results">
+      </div>
+    </div>
+  </body>
+</html>
+<!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -1,0 +1,10 @@
+.jumbotron {
+  text-align: center;
+}
+.click:hover {
+  cursor: crosshair;
+  color: blue;
+}
+#quiz, #results {
+  display: none;
+}
